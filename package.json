@@ -5,7 +5,9 @@
   "main": ".",
   "scripts": {
     "start": "python -m http.server --directory static",
-    "build": "tsc -b"
+    "build:ts": "tsc -b",
+    "build:wb": "webpack",
+    "build":"npm run build:ts && npm run build:wb"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,8 @@
   },
   "homepage": "https://github.com/KubaK1P/Zegar#readme",
   "devDependencies": {
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "webpack-cli": "^5.1.4",
+    "webpack": "^5.1.4"
   }
 }
