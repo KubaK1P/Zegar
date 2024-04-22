@@ -17,8 +17,7 @@
     "url": "https://github.com/KubaK1P/Zegar/issues"
   },
   "homepage": "https://github.com/KubaK1P/Zegar#readme",
-  "dependencies": {
-    "tsc": "^2.0.4",
+  "devDependencies": {
     "typescript": "^5.4.5"
   }
 }
