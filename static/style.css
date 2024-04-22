@@ -1,0 +1,89 @@
+body {
+    background: #333;
+    height: 90vh;
+    transition-duration: 400ms;
+    overflow: hidden;
+}
+
+@keyframes colore {
+    0% {color: red; border-color: red;}
+    20% {color: yellow; border-color: yellow;}
+    40% {color: green; border-color: green;}
+    60% {color: blue; border-color: blue;}
+    80% {color: darkorchid; border-color: darkorchid;}
+    100% {color: purple; border-color: purple;}
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    padding: 4rem;
+    color: whitesmoke;
+    font-family: "IBM Plex Mono";
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background: rgba(32,32,32,0.5);
+    border: 5px solid rgb(32, 32, 32);
+    box-shadow: 9px 9px 0 black;
+    transition-duration: 400ms;
+}
+
+.anim {
+    animation-name: colore;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.hover {
+    padding: 1rem;
+    position: absolute;
+    color: whitesmoke;
+    bottom: -96px;
+    transition-duration: 400ms;
+}
+
+.hoverOnClick {
+    bottom: 30px;
+    background: rgba(32,32,32,0.5);
+    border: 5px solid rgb(32, 32, 32);
+    box-shadow: 9px 9px 0 black;
+    transition-duration: 400ms;
+}
+i {
+    padding: 1rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: #444;
+        transition-duration: 400ms;
+    }
+
+    .clock {
+        padding: 4vh;
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border-width: 4px; 
+        transition-duration: 400ms;
+    }
+    
+    .hover {
+        bottom: -115px;
+    }
+
+    .hoverOnClick {
+        bottom: 40px;
+    }
+}
