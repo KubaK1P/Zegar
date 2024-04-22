@@ -1,0 +1,27 @@
+{
+  "name": "zegar",
+  "version": "1.0.0",
+  "description": "1. A \"Zegar\" repository, which consists of:\r   - Zegar\r   - Nothing else\r 2. Idea by Amazon\r 3. Programming by me\r 4. Feat. Plonacy arbuz",
+  "main": ".",
+  "scripts": {
+    "start": "python -m http.server --directory static",
+    "build:ts": "tsc -b",
+    "build:wb": "webpack",
+    "build":"npm run build:ts && npm run build:wb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KubaK1P/Zegar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KubaK1P/Zegar/issues"
+  },
+  "homepage": "https://github.com/KubaK1P/Zegar#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "webpack-cli": "^5.1.4",
+    "webpack": "^5.1.4"
+  }
+}
