@@ -8,7 +8,7 @@ export default function asyncClock(state:State, setState:((newst:(x:State)=>Stat
             date: new Date()
         }
     })
-    if (state.date.getMinutes() == 0) {
+    if (state.date.getMinutes() == 0 || (state.date.getMonth() == 0 && state.date.getDate() == 19)) {
         clock.classList.add("anim");
     } else {
         clock.classList.remove("anim");
